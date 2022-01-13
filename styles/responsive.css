@@ -1,0 +1,46 @@
+@media only screen and (max-width:1024px) {
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .top-blogs .blog {
+        width: 100%;
+    }
+    .lates-courses .courses {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header-section .menu-icon {
+        display: inline-block;
+    }
+    .header-section .menu-icon:focus .main-menu {
+        display: block;
+    }
+    .header-section .main-menu {
+        display: none;
+        position: absolute;
+    }
+    .top-players .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lates-courses .courses {
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .section-title {
+        text-align: center;
+    }
+    .top-players .player {
+        flex-direction: column;
+    }
+    .top-blogs .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+}
